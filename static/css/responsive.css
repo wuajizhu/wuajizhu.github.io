@@ -149,13 +149,15 @@ width: 30%;
 
 
 .header_section { background-size: cover; }
-.logo { width: 40%; padding-left: 0px; }
+.logo { width: 5%; padding-left: 0px;
+}
 .toggle_menu { top: -19px; position: relative; left: 6px; }
 .menu_text li {  }
 .menu_text { }
 .our_text { font-size: 50px; }
 .taital_main { margin-top: 40px; padding-left: 0px;   }
-.best_text { font-size: 40px; }
+.best_text { font-size: 40px; 
+	}
 .best_text { font-size: 40px; }
 .menu_text li { padding-top: 0px; }
 .contrary_text { width: 30%; }

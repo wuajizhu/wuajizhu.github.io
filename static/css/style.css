@@ -325,6 +325,7 @@ button {
      font-size: 100px;
      color: #f2f2f2;
      font-weight: bold;
+	text-shadow: #5a2d24 1px 0 20px
 
 }
 
@@ -332,9 +333,9 @@ button {
      width: 100%;
      float: left;
      font-size: 60px;
-     color: #120101;
+     color: #5a2d24;
      font-weight: bold;
-}
+	text-shadow: #f2f2f2 2px 0 15px}
 
 .company_text{
      width: 100%;
@@ -487,6 +488,7 @@ ul.social-icons {
      font-size: 50px;
      color: #ffffff;
      font-weight: bold;
+	text-shadow: #5a2d24 1px 0 20px
 }
 
 .compant_taital {
