@@ -333,14 +333,14 @@ button {
      width: 100%;
      float: left;
      font-size: 60px;
-     color: #5a2d24;
+     color: #46187b;
      font-weight: bold;
 	text-shadow: #f2f2f2 2px 0 15px}
 
 .company_text{
      width: 100%;
      float: left;
-     font-size: 60px;
+     font-size: 40px;
      color: #f2f2f2;
      font-weight: bold;
 }
@@ -440,8 +440,10 @@ ul.social-icons {
      width: 100%;
      float: left;
      font-size: 18px;
-     color: #0c0202;
+     color: #f2f2f2;
+	 font-weight: bold;
      margin-left: 0px;
+	text-shadow: #5a2d24 1px 0 20px
 }
 
 .read_bt a {
@@ -469,7 +471,7 @@ ul.social-icons {
 .about_main {
     width: 100%;
     float: left;
-    margin-top: 125px;
+    margin-top: 40px;
 }
 
 .company_section{
@@ -485,7 +487,7 @@ ul.social-icons {
 .company_text{
      width: 100%;
      float: left;
-     font-size: 50px;
+     font-size: 30px;
      color: #ffffff;
      font-weight: bold;
 	text-shadow: #5a2d24 1px 0 20px
@@ -889,3 +891,19 @@ ul.social-icons {
 
 
 
+
+.about_section {
+	    width: 100%;
+    float: left;
+    background-image: url("../image/5d09f86fef66c.png");
+    height: auto;
+    background-size: cover
+    padding: 10px 0px 90px 0px;
+    background-repeat: no-repeat;
+}
+
+.col-sm-8 {
+	    width: 100%;
+    float: left;
+    margin-top: 90px;
+}
