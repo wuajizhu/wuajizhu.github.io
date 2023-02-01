@@ -1,5 +1,5 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
-<script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer="">var __ez=__ez||{};__ez.stms=Date.now();__ez.evt={};__ez.script={};__ez.ck=__ez.ck||{};__ez.template={};__ez.template.isOrig=true;__ez.queue=function(){var e=0,i=0,t=[],n=!1,s=[],r=[],o=!0,a=function(e,i,n,s,r,o,a){var l=this;this.name=e,this.funcName=i,this.parameters=null===n?null:n instanceof Array?n:[n],this.isBlock=s,this.blockedBy=r,this.deleteWhenComplete=o,this.isError=!1,this.isComplete=!1,this.isInitialized=!1,this.proceedIfError=a,this.isTimeDelay=!1,this.process=function(){u("... func = "+e),l.isInitialized=!0,l.isComplete=!0,u("... func.apply: "+e);var i=l.funcName.split("."),n=null;i.length>3||(n=3===i.length?window[i[0]][i[1]][i[2]]:2===i.length?window[i[0]][i[1]]:window[l.funcName]),null!=n&&n.apply(null,this.parameters),!0===l.deleteWhenComplete&&delete t[e],!0===l.isBlock&&(u("----- F'D: "+l.name),f())}},l=function(e,i,t,n,s,r,o){var a=this;this.name=e,this.path=i,this.async=s,this.defer=r,this.isBlock=t,this.blockedBy=n,this.isInitialized=!1,this.isError=!1,this.isComplete=!1,this.proceedIfError=o,this.isTimeDelay=!1,this.isPath=function(e){return"/"===e[0]&&"/"!==e[1]},this.getSrc=function(e){return void 0!==window.__ezScriptHost&&this.isPath(e)?window.__ezScriptHost+e:e},this.process=function(){a.isInitialized=!0,u("... file = "+e);var i=document.createElement("script");i.src=this.getSrc(this.path),!0===s?i.async=!0:!0===r&&(i.defer=!0),i.onerror=function(){u("----- ERR'D: "+a.name),a.isError=!0,!0===a.isBlock&&f()},i.onreadystatechange=i.onload=function(){var e=i.readyState;u("----- F'D: "+a.name),e&&!/loaded|complete/.test(e)||(a.isComplete=!0,!0===a.isBlock&&f())},document.getElementsByTagName("head")[0].appendChild(i)}},c=function(e,i){this.name=e,this.path="",this.async=!1,this.defer=!1,this.isBlock=!1,this.blockedBy=[],this.isInitialized=!0,this.isError=!1,this.isComplete=i,this.proceedIfError=!1,this.isTimeDelay=!1,this.process=function(){}};function d(e){!0!==h(e)&&0!=o&&e.process()}function h(e){if(!0===e.isTimeDelay&&!1===n)return u(e.name+" blocked = TIME DELAY!"),!0;if(e.blockedBy instanceof Array)for(var i=0;i<e.blockedBy.length;i++){var s=e.blockedBy[i];if(!1===t.hasOwnProperty(s))return u(e.name+" blocked = "+s),!0;if(!0===e.proceedIfError&&!0===t[s].isError)return!1;if(!1===t[s].isComplete)return u(e.name+" blocked = "+s),!0}return!1}function u(e){var i=window.location.href,t=new RegExp("[?&]ezq=([^&#]*)","i").exec(i);"1"===(t?t[1]:null)&&console.debug(e)}function f(){++e>200||(u("let's go"),m(s),m(r))}function m(e){for(var i in e)if(!1!==e.hasOwnProperty(i)){var t=e[i];!0===t.isComplete||h(t)||!0===t.isInitialized||!0===t.isError?!0===t.isError?u(t.name+": error"):!0===t.isComplete?u(t.name+": complete already"):!0===t.isInitialized&&u(t.name+": initialized already"):t.process()}}return window.addEventListener("load",(function(){setTimeout((function(){n=!0,u("TDELAY -----"),f()}),5e3)}),!1),{addFile:function(e,i,n,o,a,c,h,u){var f=new l(e,i,n,o,a,c,h);!0===u?s[e]=f:r[e]=f,t[e]=f,d(f)},addDelayFile:function(e,i){var n=new l(e,i,!1,[],!1,!1,!0);n.isTimeDelay=!0,u(e+" ...  FILE! TDELAY"),r[e]=n,t[e]=n,d(n)},addFunc:function(e,n,o,l,c,h,u,f,m){!0===h&&(e=e+"_"+i++);var p=new a(e,n,o,l,c,u,f);!0===m?s[e]=p:r[e]=p,t[e]=p,d(p)},addDelayFunc:function(e,i,n){var s=new a(e,i,n,!1,[],!0,!0);s.isTimeDelay=!0,u(e+" ...  FUNCTION! TDELAY"),r[e]=s,t[e]=s,d(s)},items:t,processAll:f,setallowLoad:function(e){o=e},markLoaded:function(e){if(e&&0!==e.length){if(e in t){var i=t[e];!0===i.isComplete?u(i.name+" "+e+": error loaded duplicate"):(i.isComplete=!0,i.isInitialized=!0)}else t[e]=new c(e,!0);u("markLoaded dummyfile: "+t[e].name)}},logWhatsBlocked:function(){for(var e in t)!1!==t.hasOwnProperty(e)&&h(t[e])}}}();__ez.evt.add=function(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent?e.attachEvent("on"+t,n):e["on"+t]=n()},__ez.evt.remove=function(e,t,n){e.removeEventListener?e.removeEventListener(t,n,!1):e.detachEvent?e.detachEvent("on"+t,n):delete e["on"+t]};__ez.script.add=function(e){var t=document.createElement("script");t.src=e,t.async=!0,t.type="text/javascript",document.getElementsByTagName("head")[0].appendChild(t)};__ez.dot={};!function(){var e;__ez.vep=(e=[],{Add:function(i,t){__ez.dot.isDefined(i)&&__ez.dot.isValid(t)&&e.push({type:"video",video_impression_id:i,domain_id:__ez.dot.getDID(),t_epoch:__ez.dot.getEpoch(0),data:__ez.dot.dataToStr(t)})},Fire:function(){if(void 0===document.visibilityState||"prerender"!==document.visibilityState){if(__ez.dot.isDefined(e)&&e.length>0)for(;e.length>0;){var i=5;i>e.length&&(i=e.length);var t=e.splice(0,i),o=__ez.dot.getURL("/detroitchicago/grapefruit.gif")+"?orig="+(!0===__ez.template.isOrig?1:0)+"&v="+btoa(JSON.stringify(t));__ez.dot.Fire(o)}e=[]}}})}();</script><script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer=""></script>
+<script data-ezscrex="false" data-cfasync="false" data-pagespeed-no-defer="">var __ez=__ez||{};__ez.stms=Date.now();__ez.evt={};__ez.script={};__ez.ck=__ez.ck||{};__ez.template={};__ez.template.isOrig=true;__ez.queue=function(){var e=0,i=0,t=[],n=!1,s=[],r=[],o=!0,a=function(e,i,n,s,r,o,a){var l=this;this.name=e,this.funcName=i,this.parameters=null===n?null:n instanceof Array?n:[n],this.isBlock=s,this.blockedBy=r,this.deleteWhenComplete=o,this.isError=!1,this.isComplete=!1,this.isInitialized=!1,this.proceedIfError=a,this.isTimeDelay=!1,this.process=function(){u("... func = "+e),l.isInitialized=!0,l.isComplete=!0,u("... func.apply: "+e);var i=l.funcName.split("."),n=null;i.length>3||(n=3===i.length?window[i[0]][i[1]][i[2]]:2===i.length?window[i[0]][i[1]]:window[l.funcName]),null!=n&&n.apply(null,this.parameters),!0===l.deleteWhenComplete&&delete t[e],!0===l.isBlock&&(u("----- F'D: "+l.name),f())}},l=function(e,i,t,n,s,r,o){var a=this;this.name=e,this.path=i,this.async=s,this.defer=r,this.isBlock=t,this.blockedBy=n,this.isInitialized=!1,this.isError=!1,this.isComplete=!1,this.proceedIfError=o,this.isTimeDelay=!1,this.isPath=function(e){return"/"===e[0]&&"/"!==e[1]},this.getSrc=function(e){return void 0!==window.__ezScriptHost&&this.isPath(e)?window.__ezScriptHost+e:e},this.process=function(){a.isInitialized=!0,u("... file = "+e);var i=document.createElement("script");i.src=this.getSrc(this.path),!0===s?i.async=!0:!0===r&&(i.defer=!0),i.onerror=function(){u("----- ERR'D: "+a.name),a.isError=!0,!0===a.isBlock&&f()},i.onreadystatechange=i.onload=function(){var e=i.readyState;u("----- F'D: "+a.name),e&&!/loaded|complete/.test(e)||(a.isComplete=!0,!0===a.isBlock&&f())},document.getElementsByTagName("head")[0].appendChild(i)}},c=function(e,i){this.name=e,this.path="",this.async=!1,this.defer=!1,this.isBlock=!1,this.blockedBy=[],this.isInitialized=!0,this.isError=!1,this.isComplete=i,this.proceedIfError=!1,this.isTimeDelay=!1,this.process=function(){}};function d(e){!0!==h(e)&&0!=o&&e.process()}function h(e){if(!0===e.isTimeDelay&&!1===n)return u(e.name+" blocked = TIME DELAY!"),!0;if(e.blockedBy instanceof Array)for(var i=0;i<e.blockedBy.length;i++){var s=e.blockedBy[i];if(!1===t.hasOwnProperty(s))return u(e.name+" blocked = "+s),!0;if(!0===e.proceedIfError&&!0===t[s].isError)return!1;if(!1===t[s].isComplete)return u(e.name+" blocked = "+s),!0}return!1}function u(e){var i=window.location.href,t=new RegExp("[?&]ezq=([^&#]*)","i").exec(i);"1"===(t?t[1]:null)&&console.debug(e)}function f(){++e>200||(u("let's go"),m(s),m(r))}function m(e){for(var i in e)if(!1!==e.hasOwnProperty(i)){var t=e[i];!0===t.isComplete||h(t)||!0===t.isInitialized||!0===t.isError?!0===t.isError?u(t.name+": error"):!0===t.isComplete?u(t.name+": complete already"):!0===t.isInitialized&&u(t.name+": initialized already"):t.process()}}return window.addEventListener("load",(function(){setTimeout((function(){n=!0,u("TDELAY -----"),f()}),5e3)}),!1),{addFile:function(e,i,n,o,a,c,h,u){var f=new l(e,i,n,o,a,c,h);!0===u?s[e]=f:r[e]=f,t[e]=f,d(f)},addDelayFile:function(e,i){var n=new l(e,i,!1,[],!1,!1,!0);n.isTimeDelay=!0,u(e+" ...  FILE! TDELAY"),r[e]=n,t[e]=n,d(n)},addFunc:function(e,n,o,l,c,h,u,f,m){!0===h&&(e=e+"_"+i++);var p=new a(e,n,o,l,c,u,f);!0===m?s[e]=p:r[e]=p,t[e]=p,d(p)},addDelayFunc:function(e,i,n){var s=new a(e,i,n,!1,[],!0,!0);s.isTimeDelay=!0,u(e+" ...  FUNCTION! TDELAY"),r[e]=s,t[e]=s,d(s)},items:t,processAll:f,setallowLoad:function(e){o=e},markLoaded:function(e){if(e&&0!==e.length){if(e in t){var i=t[e];!0===i.isComplete?u(i.name+" "+e+": error loaded duplicate"):(i.isComplete=!0,i.isInitialized=!0)}else t[e]=new c(e,!0);u("markLoaded dummyfile: "+t[e].name)}},logWhatsBlocked:function(){for(var e in t)!1!==t.hasOwnProperty(e)&&h(t[e])}}}();__ez.evt.add=function(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent?e.attachEvent("on"+t,n):e["on"+t]=n()},__ez.evt.remove=function(e,t,n){e.removeEventListener?e.removeEventListener(t,n,!1):e.detachEvent?e.detachEvent("on"+t,n):delete e["on"+t]};__ez.script.add=function(e){var t=document.createElement("script");t.src=e,t.async=!0,t.type="text/javascript",document.getElementsByTagName("head")[0].appendChild(t)};__ez.dot={};!function(){var e;__ez.vep=(e=[],{Add:function(i,t){__ez.dot.isDefined(i)&&__ez.dot.isValid(t)&&e.push({type:"video",video_impression_id:i,domain_id:__ez.dot.getDID(),t_epoch:__ez.dot.getEpoch(0),ta:__ez.dot.dataToStr(t)})},Fire:function(){if(void 0===document.visibilityState||"prerender"!==document.visibilityState){if(__ez.dot.isDefined(e)&&e.length>0)for(;e.length>0;){var i=5;i>e.length&&(i=e.length);var t=e.splice(0,i),o=__ez.dot.getURL("/detroitchicago/grapefruit.gif")+"?orig="+(!0===__ez.template.isOrig?1:0)+"&v="+btoa(JSON.stringify(t));__ez.dot.Fire(o)}e=[]}}})}();</script><script data-ezscrex="false" data-cfasync="false" data-pagespeed-no-defer=""></script>
 <!-- basic -->
 
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="viewport" content="initial-scale=1, maximum-scale=1">
 <!-- site metas -->
-<title>Transit</title>
+<title>Jz个人介绍</title>
 <meta name="keywords" content="">
 <meta name="description" content="">
 <meta name="author" content="">	
@@ -29,17 +29,17 @@
 <link rel="stylesheet" href="#">
 <link rel="stylesheet" href="static/css/jquery.fancybox.min.css" media="screen">
 
-<link rel='canonical' href=''>
-<script type="text/javascript">var ezouid = "1";</script><script type='text/javascript'>
+<link rel="canonical" >
+<script type="text/javascript">var ezouid = "1";</script><script type="text/javascript">
 var ezoTemplate = 'old_site_noads';
-if(typeof ezouid == 'undefined')
+if(typeof ezouid == "undefined")
 {
     var ezouid = 'none';
 }
 var ezoFormfactor = '1';
 var ezo_elements_to_check = Array();
 </script><!-- START EZHEAD -->
-<script data-ezscrex="false" type='text/javascript'>
+<script data-ezscrex="false" type="text/javascript">
 var soc_app_id = '0';
 var did = 317139;
 var ezdomain = 'html.design';
@@ -48,7 +48,7 @@ var ezoicSearchable = 1;
 <!--{jquery}-->
 <!-- END EZHEAD -->
 <script data-ezscrex="false" type="text/javascript" data-cfasync="false">var _ezaq = {"ad_cache_level":0,"ad_lazyload_version":0,"ad_load_version":0,"city":"Xiamen","country":"CN","days_since_last_visit":-1,"domain_id":317139,"engaged_time_visit":0,"ezcache_level":2,"ezcache_skip_code":0,"form_factor_id":1,"framework_id":1,"is_return_visitor":false,"is_sitespeed":0,"last_page_load":"","last_pageview_id":"","lt_cache_level":0,"metro_code":0,"page_ad_positions":"","page_view_count":0,"page_view_id":"86f1d647-455d-4395-7017-59ef1fc5993a","position_selection_id":0,"postal_code":"","pv_event_count":0,"response_size_orig":15812,"response_time_orig":4,"serverid":"52.42.25.107:13693","state":"FJ","t_epoch":1672737796,"template_id":120,"time_on_site_visit":0,"url":"#","user_id":0,"weather_precipitation":0,"weather_summary":"","weather_temperature":0,"word_count":541,"worst_bad_word_level":0};var _ezExtraQueries = "&ez_orig=1";</script>
-<script data-ezscrex='false' data-pagespeed-no-defer="" data-cfasync='false'>
+<script data-ezscrex="false" data-pagespeed-no-defer="" data-cfasync="false">
 function create_ezolpl(pvID, rv) {
     var d = new Date();
     d.setTime(d.getTime() + (365*24*60*60*1000));
@@ -90,10 +90,10 @@ __ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", ["86f1d647-455d-4395-7017-5
                 <div class="col-sm-6">
                     <div class="menu_text">
                         <ul>
-                            <li><a href="#"><img src="static/picture/user-icon.png"></a></li>
-                            <li><a href="#"><img src="static/picture/search-icon.png"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
                             <div id="myNav" class="overlay">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&nbsp;</a>
                 <div class="overlay-content">
                   <a href="">Home</a>
                   <a href="about.html">About</a>
@@ -102,7 +102,7 @@ __ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", ["86f1d647-455d-4395-7017-5
                   <a href="contact.html">Contact Us</a>
                 </div>
                 </div>
-                <span style="font-size:33px;cursor:pointer; color: #ffffff;" onclick="openNav()"><img src="static/picture/toggle-icon.png" class="toggle_menu"></span>
+                <span style="font-size:33px;cursor:pointer; color: #ffffff;" onclick="openNav()"></span>
                 </ul></div>  
                 
                     
@@ -122,56 +122,32 @@ __ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", ["86f1d647-455d-4395-7017-5
     <div class="carousel-item active">
       <div class="container-fluid">
     		<div class="taital_main">
-    			<h1 class="our_text">专精</h1>
-    		    <h2 class="best_text">Edu-Tec-Math</h2>
-    		    <h2 class="company_text">教育科技数学</h2>
+    			<h1 class="our_text">欢迎</h1>
+    		    <h2 class="best_text">Bienvenue</h2>
+    		    <h2 class="company_text">此为个人名片</h2>
     		    <p class="contrary_text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has rootsContrary to popular belief, Lorem Ipsum is not simply random sContrary to popular belief, Lorem Ipsum is not simply random text. It has rootsContrary to popular belief, Lorem Ipsum is not simply random </p>
     		</div>
     	</div>
-    	<div class="footer-social-icons">
-            <ul class="social-icons">
-               <li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
-               <li><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
-               <li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
-               <li><a href="" class="social-icon"> <i class="fa fa-instagram"></i></a></li>
-            </ul>
-        </div>
     </div>
     <div class="carousel-item">
       <div class="container-fluid">
     		<div class="taital_main">
     			<h1 class="our_text">叽蛛</h1>
-    		    <h2 class="best_text">bilibili</h2>
-    		    <h2 class="company_text">UP欢迎搜索</h2>
+    		    <h2 class="best_text">BilibiliUP</h2>
+    		    <h2 class="company_text">欢迎搜索</h2>
     		    <p class="contrary_text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has rootsContrary to popular belief, Lorem Ipsum is not simply random sContrary to popular belief, Lorem Ipsum is not simply random text. It has rootsContrary to popular belief, Lorem Ipsum is not simply random </p>
     		</div>
     	</div>
-    	<div class="footer-social-icons">
-            <ul class="social-icons">
-               <li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
-               <li><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
-               <li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
-               <li><a href="" class="social-icon"> <i class="fa fa-instagram"></i></a></li>
-            </ul>
-        </div>
     </div>
     <div class="carousel-item">
       <div class="container-fluid">
     		<div class="taital_main">
-    			<h1 class="our_text">欢迎</h1>
-    		    <h2 class="best_text">Hello</h2>
-    		    <h2 class="company_text">这是我的个人介绍</h2>
+    			<h1 class="our_text">专精</h1>
+    		    <h2 class="best_text">EduTeMathMed</h2>
+    		    <h2 class="company_text">教育科技数学传媒</h2>
     		    <p class="contrary_text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has rootsContrary to popular belief, Lorem Ipsum is not simply random sContrary to popular belief, Lorem Ipsum is not simply random text. It has rootsContrary to popular belief, Lorem Ipsum is not simply random </p>
     		</div>
     	</div>
-    	<div class="footer-social-icons">
-            <ul class="social-icons">
-               <li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
-               <li><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
-               <li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
-               <li><a href="" class="social-icon"> <i class="fa fa-instagram"></i></a></li>
-            </ul>
-        </div>
     </div>
   </div>
 </div>	
@@ -183,9 +159,10 @@ __ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", ["86f1d647-455d-4395-7017-5
     	<div class="container">
     		<div class="row">
     			<div class="col-sm-4 about_main">
-    				<h1 class="about_text">About <span style="color: #f7566e;">Us</span></h1>
-    				<p class="dummy_text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, </p>
-    				<div class="read_bt"><a href="#">Read More</a></div>
+    				<h1 class="about_text">身份&nbsp;</h1>
+    				<h1 class="about_text"><span style="color: #ea9d8e;">Identité</span></h1>
+<p class="dummy_text">于华师学习，性别男，性格相对外向，喜好读书，对于家教、班级管理与授课、教育技术应用、教育产品制作、传媒方面、编程方面、数学方面及编程方面均有深入研究。 </p>
+    				<div class="read_bt"><a href="https://space.bilibili.com/57592740">👆b站主页&nbsp;</a></div>
     			</div> 
     			<div class="col-sm-8">
     				<div><img src="static/picture/img-1.png"></div>
@@ -197,16 +174,19 @@ __ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", ["86f1d647-455d-4395-7017-5
     <!-- our company section start -->
     <div class="company_section layout_padding">
     	<div class="container">
-    		<h1 class="company_text">Our Company</h1>
-    		<div class="compant_taital">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don&#39;t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn&#39;t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</div>
+    		<h1 class="company_text">对外特质 Caractéristiques</h1>
+    		<div class="compant_taital">🎯B站70W播放UP主，擅长传媒，熟练使用PR及其他视频剪辑软件，熟练使用PS和AI等制图工具且能够进行基础的板绘，以上内容均曾商用，PPT制作技术娴熟，AN、AE、AU、DW等动画后期音频网站软件也在学习中。可担任图标设计、基础板绘、海报设计、手册设计、视频剪辑、动画制作、PPT制作等任务。<br>
+			🎇编程及数学建模基础扎实，数学建模省三校二，熟练使用Matlab、Jupyter(（Python），基本掌握C语言、SPSS、Latex写作、Html、CSS。能够完整承担整个建模流程中的所有任务，能够完成一定的其他编程任务（CV工程师，从Github上抄点东西还是可以用的hhh，之前抄过微信机器人和脚本之类的）<br>
+			🌌家教及授课经验非常丰富，曾经教过小学生、初中生、高中生的化学、物理、数学等，内容包括正常的课内内容复习以及预习，也曾有过小学奥数班级管理经验。目前帮助多名学生提分，其中帮助一位高一女生提分五六十分。<br>
+			🌏信息搜索能力极强。</div>
     	</div>
     </div>
     <!-- our company section end -->
     <!-- our ships section start -->
     <div class="ship_section layout_padding">
     	<div class="container">
-    		<h1 class="ship_text">Our Ships</h1>
-    		<p class="ship_taital">nternet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+    		<h1 class="ship_text">相关内容展示 <br>Affichage du contenu</h1>
+    		<p class="ship_taital">以下：</p>
     		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
               <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -310,7 +290,7 @@ __ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", ["86f1d647-455d-4395-7017-5
     <!-- copyright section start -->
     <div class="copyright_section">
     	<div class="container">
-    		<p class="copyright_text">Copyright &copy; 2023.Company name All rights reserved.<a target="_blank" href="https://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></div><a href="index1.html">
+    		<p class="copyright_text">Copyright &copy; 2023. 叶上白 name All rights reserved. 叽蛛<a target="_blank" href="https://sc.chinaz.com/moban/">&nbsp;</a></div><a href="index1.html">
     </a></div><a href="index1.html">
     <!-- copyright section end -->
 
